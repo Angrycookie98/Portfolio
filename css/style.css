@@ -227,6 +227,7 @@ a{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	background-color: white;
 }
 .close_btn{
 	position: absolute;
@@ -237,7 +238,6 @@ a{
 }
 #modal_window1 .modal_window{
 	width: 900px;
-	background-color: white;
 }
 #modal_window1 .swiper-slide{
 	max-height: 60vh;
@@ -268,6 +268,16 @@ a{
 .swiper-container{
 	position: relative;
 	overflow-x: hidden;
+}
+
+#modal_window2 .modal_window{
+	padding: 30px;
+	width: 450px;
+	font-size: 18px;
+}
+#modal_window2 .close_btn{
+	top: 20px;
+	right: 20px;
 }
 
 
@@ -336,6 +346,86 @@ header{
 .banner_btn:hover{
 	background-color: #FB8A06;
 	border-color: #FB8A06;
+}
+
+
+.toggle{
+    width: 30px;   
+    height: 28px;
+    cursor: pointer;
+    display: none;
+    position: relative;
+}
+.toggle.active{
+	width: 30px;
+	height: 30px;
+	z-index: 960;
+    right: 10px;
+    position: absolute;
+    top: 10px;
+}
+.toggle li{
+    position: absolute;
+    left: 5%;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 90%;
+    list-style: none;
+    background: white;
+    transition: .9s;
+}
+.toggle li:nth-of-type(1){
+    top: 20%;
+}
+.toggle li:nth-of-type(2){
+    top: 50%;
+}
+.toggle li:nth-of-type(3){
+    top: 80%;
+}
+.toggle.active li:nth-of-type(1){
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+.toggle.active li:nth-of-type(2){
+    left: -100%;
+    opacity: 0;
+}
+.toggle.active li:nth-of-type(3){
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+.mobile_menu{
+	display: none;
+	position: absolute;
+  	top: 0;
+  	left: -5000px;
+  	color: white;
+  	background: #1b242f;
+  	width: 500px;
+  	height: 100vh;
+  	padding: 10px 15px 85px;
+  	text-align: center;
+  	transition: .9s;
+  	z-index: 950;
+}
+.mobile_menu.active{
+	left: 0;
+}
+.mobile_menu ul li{
+	list-style-type: none;
+	text-align: left;
+	margin-top: 20px;
+}
+.mobile_menu ul li a{
+  width: fit-content;
+  font-size: 20px;
+  padding: 5px 0;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+.mobile_menu ul li a:hover{
+	border-bottom-color: white;
 }
 
 
