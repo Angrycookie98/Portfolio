@@ -37,6 +37,17 @@
 		padding-right: 25px;
 	}
 
+	header{
+		height: 48px;
+		padding: 10px 0;
+	}
+	.toggle, .mobile_menu{
+		display: block;
+	}
+	.menu{
+		display: none;
+	}
+
 	.banner_text{
 		font-size: 28px;
 	}
@@ -85,6 +96,9 @@
 		padding-right: 15px;
 	}
 
+	.banner_text{
+		font-size: 24px;
+	}
 	.banner_btn{
 		width: calc(100% - 30px);
 	}
@@ -106,5 +120,14 @@
 	.modal_window_view_btn{
 		width: 100%;
 		text-align: center;
+	}
+
+	#modal_window2 .modal_window{
+		width: calc(100% - 50px);
+		font-size: 16px;
+	}
+	#modal_window2 .close_btn{
+		top: 5px;
+		right: 5px;
 	}
 }
