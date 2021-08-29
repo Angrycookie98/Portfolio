@@ -90,7 +90,7 @@ $(document).ready(function(){
         context: $("#contact_form"),
         data: $("#contact_form").serialize(),
         success: function(){
-          
+          $("#modal_window2").fadeIn(500);
         },
         fail: function(){
           alert("Упс! Ваше сообщение не было отправлено, попробуйте снова");
