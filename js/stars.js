@@ -344,15 +344,3 @@ stats.domElement.style.top = '0px';
 		});
 	};
 })($, window);
-
-// Init plugin
-$('#stars').constellation({
-	star: {
-		width: 3
-	},
-	line: {
-		color: 'rgba(157, 188, 225, 1)'
-	},
-	length: 200,
-	radius: 250
-});
