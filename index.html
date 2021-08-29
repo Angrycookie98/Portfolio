@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+</head>
+<body>
+<header>
+	<div class="container">
+		<div class="menu">
+			<ul class="flex-block">
+				<li><a href="#banner_block">Главная</a></li>
+				<li><a href="#about_me">Обо мне</a></li>
+				<li><a href="#portfolio">Портфолио</a></li>
+				<li><a href="#contact">Контакты</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<div class="modal_window_container" id="modal_window1">
+	<div class="curtain"></div>
+	<img src="images/close_btn.svg" class="close_btn">
+	<div class="modal_window space-between">
+		<div class="swiper-container">
+			<div class="swiper-wrapper"></div>
+			<div class="swiper-button-wrapper">
+				<div class="swiper-button-container">
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+		</div>
+		<div class="modal_window_text">
+			<div class="modal_window_title"></div>
+			<div class="modal_window_subtitle"></div>
+			<a class="modal_window_view_btn">Просмотреть</a>
+		</div>
+	</div>
+</div>
+
+<div class="banner flex-center" id="banner_block">
+	<canvas id="stars"></canvas>
+	<div class="banner_text">
+		Привет, меня зовут Ярыловец Виктор.<br>
+		Я - Front-end разработчик.
+	</div>
+	<div class="banner_btn"><a href="#portfolio">Просмотреть мои работы</a></div>
+</div>
+
+<div class="container">
+	<div class="block about_me_block" id="about_me" data-aos="fade-left" data-aos-duration="1000">
+		<div class="block_title">Обо мне</div>
+		<div class="whos_me_block">
+				<div class="whos_me_img"></div>
+				<div class="block_text">Я - Front-end разработчик. Занимаюсь версткой, программированием и доработкой сайтов, делая их адаптивными, кроссбраузерными и качественно сделанными.</div>
+		</div>
+		<div class="flex-between">
+			<div class="advantage">
+				<div class="advantage_image flex-center flex-vertical-center"><i class="fas fa-mobile-alt"></i></div>
+				<div class="block_subtitle">Адаптивность</div>
+				<div class="block_text">Мои работы работают на любом устройстве одинаково хорошо, будь это смартфон, планшет или компьютер.</div>
+			</div>
+			<div class="advantage">
+				<div class="advantage_image flex-center flex-vertical-center"><i class="fas fa-tachometer-alt"></i></div>
+				<div class="block_subtitle">Скорость</div>
+				<div class="block_text">Один из моих самых главных приоритетов - это быстрая загрузка сайта без всяких задержек.</div>
+			</div>
+			<div class="advantage">
+				<div class="advantage_image flex-center flex-vertical-center"><i class="far fa-lightbulb"></i></div>
+				<div class="block_subtitle">Чистота кода</div>
+				<div class="block_text">Мои работы написаны так, чтобы можно было легко и понятно поддерживать их.</div>
+			</div>
+			<div class="advantage">
+				<div class="advantage_image flex-center flex-vertical-center"><i class="fas fa-rocket"></i></i></div>
+				<div class="block_subtitle">Динамичность</div>
+				<div class="block_text">Сайты не должны быть статичными, поэтому обычно я даю им жизнь.</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="portfolio_block block" id="portfolio" data-aos="fade-right" data-aos-duration="1000">
+	<div class="container">
+		<div class="block_title">Портфолио</div>
+		<div class="portfolio_works_block flex-between">
+			<!--
+			<div class="portfolio_work">
+				<div class="portfolio_work_img"><img src="images/markman1.png"></div>
+				<div class="portfolio_work_curtain">
+					<div class="portfolio_work_curtain_title">Markman</div>
+					<div class="portfolio_work_curtain_gallery">
+						<div class="swiper-slide flex-block"><img src="images/markman1.png"></div>
+						<div class="swiper-slide flex-block"><img src="images/markman2.png"></div>
+						<div class="swiper-slide flex-block"><img src="images/markman3.png"></div>
+					</div>
+					<div class="portfolio_work_curtain_subtitle">Библиотека сказок, стихов, басен и аудиосказок</div>
+					<a href="#" class="portfolio_work_curtain_link"></a>
+					<div class="portfolio_work_curtain_btn">Подробнее</div>
+				</div>
+			</div>-->
+			<div class="portfolio_work">
+				<div class="portfolio_work_img"><img src="images/markman1.png"></div>
+				<div class="portfolio_work_curtain">
+					<div class="portfolio_work_curtain_title">Markman</div>
+					<div class="portfolio_work_curtain_gallery">
+						<div class="swiper-slide flex-block"><img src="images/markman1.png"></div>
+						<div class="swiper-slide flex-block"><img src="images/markman2.png"></div>
+						<div class="swiper-slide flex-block"><img src="images/markman3.png"></div>
+					</div>
+					<div class="portfolio_work_curtain_subtitle">Сайт представительства бренда «GRIPIT» на территории СНГ</div>
+					<a href="http://markman.by/" class="portfolio_work_curtain_link"></a>
+					<div class="portfolio_work_curtain_btn">Подробнее</div>
+				</div>
+			</div>
+
+			<div class="portfolio_work">
+				<div class="portfolio_work_img"><img src="images/safas_doors1.png"></div>
+				<div class="portfolio_work_curtain">
+					<div class="portfolio_work_curtain_title">Safas Doors</div>
+					<div class="portfolio_work_curtain_gallery">
+						<div class="swiper-slide flex-block"><img src="images/safas_doors1.png"></div>
+						<div class="swiper-slide flex-block"><img src="images/safas_doors2.png"></div>
+						<div class="swiper-slide flex-block"><img src="images/safas_doors3.png"></div>
+					</div>
+					<div class="portfolio_work_curtain_subtitle">Сайт компании по продаже дверей</div>
+					<a href="https://safas-doors.ru/" class="portfolio_work_curtain_link"></a>
+					<div class="portfolio_work_curtain_btn">Подробнее</div>
+				</div>
+			</div>
+
+			<div class="portfolio_work">
+				<div class="portfolio_work_img"><img src="images/alexmay1.png"></div>
+				<div class="portfolio_work_curtain">
+					<div class="portfolio_work_curtain_title">Alexmay</div>
+					<div class="portfolio_work_curtain_gallery">
+						<div class="swiper-slide flex-block"><img src="images/alexmay1.png"></div>
+						<div class="swiper-slide flex-block"><img src="images/alexmay2.png"></div>
+					</div>
+					<div class="portfolio_work_curtain_subtitle">Сайт вебинаров Алекса Мэя</div>
+					<a href="http://helper.deeply.ru/supportalexmay/index.php" class="portfolio_work_curtain_link"></a>
+					<div class="portfolio_work_curtain_btn">Подробнее</div>
+				</div>
+			</div>
+
+			<div class="portfolio_work">
+				<div class="portfolio_work_img"><img src="images/designedvr_1.png"></div>
+				<div class="portfolio_work_curtain">
+					<div class="portfolio_work_curtain_title">DesignedVR</div>
+					<div class="portfolio_work_curtain_gallery">
+						<div class="swiper-slide flex-block"><img src="images/designedvr_1.png"></div>
+						<div class="swiper-slide flex-block"><img src="images/designedvr_2.png"></div>
+						<div class="swiper-slide flex-block"><img src="images/designedvr_3.png"></div>
+					</div>
+					<div class="portfolio_work_curtain_subtitle">Сайт компании по продаже и аренде курортной недвижимости</div>
+					<a href="https://designedvr.com/" class="portfolio_work_curtain_link"></a>
+					<div class="portfolio_work_curtain_btn">Подробнее</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container" data-aos="fade-left" data-aos-duration="1000">
+	<div class="contacts block" id="contact">
+		<div class="block_title">Контакты</div>
+		<div class="block_subtitle">Хотите связаться со мной?</div>
+		<form id="contact_form">
+			<input type="text" name="f_name" placeholder="Имя">
+			<input type="email" name="mail" placeholder="Email">
+			<textarea placeholder="Ваше сообщение" name="message"></textarea>
+			<input type="submit" value="Отправить">
+		</form>
+	</div>
+</div>
+
+<div class="scroll_up_button">
+	<a href="#banner_block"><i class="fas fa-angle-double-up"></i></a>
+</div>
+
+<footer>
+	<div class="container">
+		<div class="footer_icons">
+			<a href="https://www.linkedin.com/in/victor-yarilovets-5780661a4/" class="footer_icon flex-center flex-vertical-center">
+				<i class="fab fa-linkedin-in"></i>
+			</a>
+			<a href="https://t.me/Angrycookie1" class="footer_icon flex-center flex-vertical-center">
+				<i class="fab fa-telegram-plane"></i>
+			</a>
+			<a href="viber://chat?number=%2B0951687064" class="footer_icon flex-center flex-vertical-center">
+				<i class="fab fa-viber"></i>
+			</a>
+			<a href="https://join.skype.com/invite/AhvLiklICPxD" class="footer_icon flex-center flex-vertical-center">
+				<i class="fab fa-skype"></i>
+			</a>
+		</div>
+		<div class="lower_footer">Ярыловец Виктор ©2021</div>
+	</div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/jquery.easeScroll.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="js/additional-methods.js"></script>
+<script type="text/javascript" src="js/stars.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
