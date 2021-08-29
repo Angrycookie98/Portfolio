@@ -1,7 +1,7 @@
 $(document).ready(function(){
-	AOS.init();
+  AOS.init();
 
-	$("html").easeScroll({
+  $("html").easeScroll({
     frameRate: 60,
     animationTime: 1000,
     stepSize: 120,
@@ -86,7 +86,7 @@ $(document).ready(function(){
     submitHandler: function(form) {
       $.ajax({
         type: "POST",
-        url: "contact_form.php",
+        url: "form.php",
         context: $("#contact_form"),
         data: $("#contact_form").serialize(),
         success: function(){
@@ -112,4 +112,49 @@ $(document).ready(function(){
       }
     }
   });
+
+  $('.toggle').click(function() {
+    $(this).toggleClass('active');
+    $('.mobile_menu').toggleClass('active');
+  });
+
+  $(".mobile_menu ul li a").click(function(){
+    $('.toggle').toggleClass('active');
+    $('.mobile_menu').toggleClass('active');
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+
+  // Init plugin
+  if ($(window).outerWidth()>800){
+    $('#stars').constellation({
+      star: {
+        width: 3
+      },
+      line: {
+        color: 'rgba(157, 188, 225, 1)'
+      },
+      radius: 200,
+      length: 250
+    });
+  }else{
+    $('#stars').constellation({
+      star: {
+        width: 3
+      },
+      line: {
+        color: 'rgba(157, 188, 225, 1)'
+      },
+      radius: 250,
+      length: 90
+    });
+  }
 });
