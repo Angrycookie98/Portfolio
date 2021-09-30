@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<title></title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!--<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -13,7 +13,7 @@
 </head>
 <body>
 <header>
-	<div class="container">
+	<div class="container flex-between flex-vertical-center">
 		<div class="menu">
 			<ul class="flex-block">
 				<li><a href="#banner_block">Главная</a></li>
@@ -22,19 +22,27 @@
 				<li><a href="#contact">Контакты</a></li>
 			</ul>
 		</div>
+		<div class="language_toggle flex-block">
+			<a>Русский</a>
+			<a href="index_en.html">English</a>
+		</div>
 		<ul class="toggle">
 	        <li></li>
 	        <li></li>
 	        <li></li>
 		</ul>
 	</div>
-	<div class="mobile_menu">
+	<div class="mobile_menu flex-between">
 		<ul>
 			<li><a href="#banner_block">Главная</a></li>
 			<li><a href="#about_me">Обо мне</a></li>
 			<li><a href="#portfolio">Портфолио</a></li>
 			<li><a href="#contact">Контакты</a></li>
 		</ul>
+		<div class="language_toggle flex-block">
+			<a>Русский</a>
+			<a href="index_en.html">English</a>
+		</div>
 	</div>
 </header>
 
@@ -112,21 +120,6 @@
 	<div class="container">
 		<div class="block_title">Портфолио</div>
 		<div class="portfolio_works_block flex-between">
-			<!--
-			<div class="portfolio_work">
-				<div class="portfolio_work_img"><img src="images/markman1.png"></div>
-				<div class="portfolio_work_curtain">
-					<div class="portfolio_work_curtain_title">Markman</div>
-					<div class="portfolio_work_curtain_gallery">
-						<div class="swiper-slide flex-block"><img src="images/markman1.png"></div>
-						<div class="swiper-slide flex-block"><img src="images/markman2.png"></div>
-						<div class="swiper-slide flex-block"><img src="images/markman3.png"></div>
-					</div>
-					<div class="portfolio_work_curtain_subtitle">Библиотека сказок, стихов, басен и аудиосказок</div>
-					<a href="#" class="portfolio_work_curtain_link"></a>
-					<div class="portfolio_work_curtain_btn">Подробнее</div>
-				</div>
-			</div>-->
 			<div class="portfolio_work">
 				<div class="portfolio_work_img"><img src="images/markman1.png"></div>
 				<div class="portfolio_work_curtain">
@@ -228,7 +221,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/jquery.easeScroll.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script type="text/javascript" src="js/jquery.validate.js"></script>
 <script type="text/javascript" src="js/additional-methods.js"></script>

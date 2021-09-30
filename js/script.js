@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  AOS.init();
+  //AOS.init();
 
   $("html").easeScroll({
     frameRate: 60,

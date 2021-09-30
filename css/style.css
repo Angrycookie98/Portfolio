@@ -21,13 +21,6 @@
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-ThinItalic.ttf');
-    font-weight: 100;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Gilroy';
     src: url('../fonts/Gilroy-BlackItalic.ttf');
     font-weight: 900;
     font-style: italic;
@@ -45,13 +38,6 @@
     src: url('../fonts/Gilroy-SemiBold.ttf');
     font-weight: 600;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-UltraLightItalic.ttf');
-    font-weight: 200;
-    font-style: italic;
 }
 
 @font-face {
@@ -112,22 +98,8 @@
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-UltraLight.ttf');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
     src: url('../fonts/Gilroy-Bold.ttf');
     font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-Thin.ttf');
-    font-weight: 100;
     font-style: normal;
 }
 
@@ -285,7 +257,7 @@ header{
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 100vw;
 	color: white;
 	background-color: #1b242f;
 	z-index: 990;
@@ -303,6 +275,10 @@ header{
 }
 .menu ul li a:hover{
 	opacity: 0.7;
+}
+
+.language_toggle a{
+	margin: 0 5px;
 }
 
 .banner{
@@ -402,12 +378,13 @@ header{
   	left: -5000px;
   	color: white;
   	background: #1b242f;
-  	width: 500px;
+  	width: 100vw;
   	height: 100vh;
   	padding: 10px 15px 85px;
   	text-align: center;
   	transition: .9s;
   	z-index: 950;
+  	flex-direction: column;
 }
 .mobile_menu.active{
 	left: 0;
