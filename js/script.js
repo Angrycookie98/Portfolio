@@ -57,7 +57,7 @@ $(document).ready(function(){
     $(".modal_window_container .swiper-wrapper").append($(this).parent().find(".portfolio_work_curtain_gallery").html());
     $(".modal_window_title").append($(this).parent().find(".portfolio_work_curtain_title").text());
     $(".modal_window_subtitle").append($(this).parent().find(".portfolio_work_curtain_subtitle").text());
-    $(".modal_window_view_btn").attr("href", $(this).parent().(".portfolio_work_curtain_link").attr("href"));
+    $(".modal_window_view_btn").attr("href", $(this).parent().find(".portfolio_work_curtain_link").attr("href"));
     $("#modal_window1").fadeIn(500);
     swiper1.update();
   });
